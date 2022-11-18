@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<nav lang="en" dir="ltr">
+  <head>
+    <style>
+
+
+body
+{
+    margin:0;
+
+  
+    background-color:brown;
+}
+h1
+{
+    position:relative;
+    font-size:4rem;
+    position:relative;
+   
+}
+a{
+  text-decoration: none;
+}
+.bg{
+
+  margin:50px 170px;
+
+}
+button{
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+  position:relative;
+}
+h1::before,
+h1::after
+{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+
+h1::before
+{
+    background:lightgrey;
+    animation:typewritter 6s steps(28) 2s forwards;
+}
+h1::after
+{
+  
+    
+}
+@keyframes blinks
+{
+    to{
+        background-color:lightcoral;
+    }
+}
+@keyframes typewritter
+{
+    to{left:100%;}
+}
+
+@keyframes blink
+{
+    to{
+    background-color:transparent;
+    }
+}
+
+
+.subtitle
+{
+  display:grid;
+  place-content:center;
+  text-align:center;
+    color:hsl(0 0% 0%/0.7);
+    font-size:2rem;
+    font-weight:400;
+    opacity:0;
+    transform: translateY(3rem);
+    animation: fade 2s ease 8s forwards;
+    
+}
+
+  
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+      
+     div {text-align: center;}
+ </style>
+    <meta charset="utf-8">
+    <title>Car resale value </title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    
+    <section class="header">
+      <div class="text-box">
+        <h1 class="bg">CAR RESALE VALUE PREDICTION</h1>
+        <p class="subtitle">welcome to our webpage</a></p>
+        <br>
+        <center><button class="subtitle "><a href="./predict_page"  style="font-size:30px" >Check price</a></button></center>>
+       
+          
+      </div>   
+    </section>
+  </nav>
+    </body>
+    </body>
+  </body>
+</html>
